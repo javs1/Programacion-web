@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <link href="assets/style.css" type="text/css" rel="stylesheet"/>
+    </head>
+    <body>
+        <p>Hola desde EJS</p>
+
+        <h1>EL numero <%=ID%> es 
+            <% if (ID%2==0) { %>  
+                par 
+            <% } %>
+            <% if (ID%2==1) { %>  
+                impar 
+            <% } %>
+        </h1>
+        <% for (var i = 1; i <= ID;  i++ ) { %>
+            <br/>  
+            <%= i %> 
+            <% } %>
+    </body>
+</html>
